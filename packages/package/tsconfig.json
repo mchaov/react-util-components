@@ -1,0 +1,20 @@
+{
+    "extends": "../../.configs/baseTSConfig",
+    "compilerOptions": {
+        "outDir": "./tsc-emit",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "helpers": [
+                "./src/helpers"
+            ],
+            "types": [
+                "./src/types"
+            ]
+        }
+    },
+    "files": [
+        "./src/index.tsx"
+    ]
+}

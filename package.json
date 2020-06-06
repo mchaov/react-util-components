@@ -1,0 +1,50 @@
+{
+  "name": "ts-react-project-template",
+  "version": "1.0.0",
+  "description": "Starting point for projects with react and typescript.",
+  "scripts": {
+    "webpack:dev": "webpack --config ./.configs/webpack.config.package.dev.js -w",
+    "webpack": "webpack --config ./.configs/webpack.config.package.prod.js -p",
+    "test": "jest --bail --config ./.configs/jest.config.package.js",
+    "test:coverage": "jest --coverage --bail --config ./.configs/jest.config.package.js",
+    "start": "ws --spa index-package.html -p 8080 -z",
+    "lint": "tslint -c ./.configs/tslint.json ./packages/package/**/*.ts* --fix",
+    "build": "npm run lint && npm run webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mchaov/ts-react-project-template.git"
+  },
+  "devDependencies": {
+    "@types/jest": "25.2.3",
+    "@types/mocha": "7.0.2",
+    "@types/node": "14.0.11",
+    "@types/react": "16.9.35",
+    "@types/react-dom": "16.9.8",
+    "css-loader": "3.5.3",
+    "file-loader": "6.0.0",
+    "jest": "26.0.1",
+    "jest-cli": "26.0.1",
+    "less": "3.11.3",
+    "less-loader": "6.1.0",
+    "less-plugin-clean-css": "1.5.1",
+    "local-web-server": "4.2.0",
+    "mini-css-extract-plugin": "0.9.0",
+    "style-loader": "1.2.1",
+    "ts-jest": "26.1.0",
+    "ts-loader": "7.0.5",
+    "ts-node": "8.10.2",
+    "tslint": "6.1.2",
+    "typescript": "3.9.5",
+    "webpack": "4.43.0",
+    "webpack-bundle-analyzer": "3.8.0",
+    "webpack-cli": "3.3.11",
+    "webpack-raw-bundler": "1.3.6"
+  },
+  "dependencies": {
+    "mobx": "5.15.4",
+    "mobx-react": "6.2.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
