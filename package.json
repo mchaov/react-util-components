@@ -1,7 +1,7 @@
 {
-  "name": "ts-react-project-template",
+  "name": "react-util-components",
   "version": "1.0.0",
-  "description": "Starting point for projects with react and typescript.",
+  "description": "Simple helper components.",
   "scripts": {
     "webpack:dev": "webpack --config ./.configs/webpack.config.package.dev.js -w",
     "webpack": "webpack --config ./.configs/webpack.config.package.prod.js -p",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mchaov/ts-react-project-template.git"
+    "url": "https://github.com/mchaov/react-util-components.git"
   },
   "devDependencies": {
     "@types/jest": "25.2.3",
