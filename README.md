@@ -1,3 +1,3 @@
-# Typescript + React starting project
+# React Util Components
 
-This repo provides simple project bootstrap split with the posibility to split into multiple packages.
+README to follow...
